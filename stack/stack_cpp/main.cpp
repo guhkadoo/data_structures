@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-    Stack s;
+    Stack<int> s;
     s.push(1);
     s.push(2);
     s.push(3);
