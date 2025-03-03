@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define ARRAY_SIZE(v) sizeof(v)/sizeof(v[0])
 
-void swap(int *a, int *b) { if(a!=b) { (*a^=*b), (*b^=*a), (*a^=*b); } }
+static inline void swap(int *a, int *b) { if(a!=b) { (*a^=*b), (*b^=*a), (*a^=*b); } }
 
 void bubble_sort(int v[], int length)
 {
