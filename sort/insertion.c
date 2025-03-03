@@ -1,8 +1,6 @@
 #include <stdio.h>
 #define ARRAY_SIZE(v) sizeof(v)/sizeof(v[0])
 
-static inline void swap(int *a, int *b) { if(a!=b) { (*a^=*b), (*b^=*a), (*a^=*b); } }
-
 void insertion_sort(int v[], int len)
 {
     register int i, j;
@@ -11,7 +9,7 @@ void insertion_sort(int v[], int len)
         int key = v[i];
         for(j=i-1; j>=0 && v[j]>key; j--)
             v[j+1] = v[j];
-        swap(&v[j+1], &key);
+        v[j+1] = key;
     }
 }
 
