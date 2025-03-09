@@ -9,12 +9,7 @@ int Hash_table::hash_function(int key)
     return (key * GOLDEN_RATIO) >> (INT_BIT-bit_size); 
 }
 
-Hash_table::Hash_table(int b_size)
-{
-    bit_size = b_size;
-    ht_size = 0;
-    lists = new List[(1<<bit_size)];
-}
+Hash_table::Hash_table(int b_size) : bit_size(b_size), ht_size(0), lists(new List[(1<<b_size)]) {}
 
 void Hash_table::add(int key, std::string value_name)
 {
