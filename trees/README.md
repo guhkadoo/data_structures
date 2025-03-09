@@ -14,3 +14,7 @@ The **trees** directory contains various tree-based data structures, each servin
 Each subdirectory contains:
 - Implementations in C or C++.
 - Example usage (main file).
+
+## 📝 To-Do List
+
+- [ ] Create README.md files for every tree structure.
