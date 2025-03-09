@@ -36,3 +36,8 @@ There are two main techniques for resolving hash collisions in hash tables:
 - More complex to implement and manage.
 - The table can become congested, leading to inefficient probing and performance degradation.
 - Deletion can be tricky, as it may leave empty slots that affect probing.
+
+## 📝 To-Do List
+
+- [ ] Implement Open Addresing Hash Table
+- [ ] Refactor Chaining Hash Table
