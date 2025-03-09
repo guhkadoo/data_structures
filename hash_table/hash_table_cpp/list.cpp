@@ -3,8 +3,6 @@
 #include <cstdio>
 #include <string>
 
-#define EXIT_WITH_ERROR(msg) (fprintf(stderr, "%s\n", msg), exit(1))
-
 struct Node 
 {
     int key;
@@ -12,36 +10,13 @@ struct Node
     struct Node *next;
 };
 
-struct Node *create_node(int key, std::string value_name)
-{
-    struct Node *new_node = new Node;
-    if(new_node)
-    {
-        new_node->key = key;
-        new_node->value_name = value_name;
-        new_node->next = NULL;
-    } else {
-        EXIT_WITH_ERROR("Error while allocating a list node");
-    }
+List::List() : l_size(0), front(nullptr) {};
 
-    return new_node;
-}
-
-List::List()
-{
-    l_size = 0;
-    front = NULL;
-}
-
-List::List(int key, std::string value_name)
-{
-    front = create_node(key, value_name);
-    l_size = 1;
-}
+List::List(int key, std::string value_name) : front(new Node{key, value_name, NULL}), l_size(1) {};
 
 void List::push_back(int key, std::string value_name)
 {
-    struct Node *new_node = create_node(key, value_name);
+    struct Node *new_node = new Node{key, value_name, NULL};
     struct Node *aux = front; 
     while(aux != NULL && aux->next != NULL)
     {
