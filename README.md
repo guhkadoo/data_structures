@@ -16,7 +16,7 @@ The repository is organized into subdirectories, each corresponding to a specifi
 - Code examples showing how to implement and use the data structure.
 
 ### Directories:
-- **binary_search**: Implementation and explanation of Binary Search.
+- **recursion**: Implements some functions that uses recursion such as Binary Search.
 - **hash_table**: Implementation and explanation of the Hash Table data structure.
 - **linked_lists**: Different types of linked lists (e.g., singly, doubly linked lists).
 - **pattern_searching**: Different pattern searching algorithms such as Naive String Matching, Rabin-Karp,
