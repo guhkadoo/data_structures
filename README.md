@@ -16,12 +16,12 @@ The repository is organized into subdirectories, each corresponding to a specifi
 - Code examples showing how to implement and use the data structure.
 
 ### Directories:
-- **recursion**: Implements some functions that uses recursion such as Binary Search.
 - **hash_table**: Implementation and explanation of the Hash Table data structure.
 - **linked_lists**: Different types of linked lists (e.g., singly, doubly linked lists).
 - **pattern_searching**: Different pattern searching algorithms such as Naive String Matching, Rabin-Karp,
     Knuth-Morris-Pratt (KMP) and Aho-Corasick.
 - **queue**: Implementation and explanation of the Queue data structure.
+- **recursion**: Implements some functions that uses recursion such as Binary Search.
 - **sort**: Different sorting algorithms such as Bubble, Insertion, Heap, Merge, Quick and Radix sort. 
 - **stack**: Implementation and explanation of the Stack data structure.
 - **trees**: Various tree structures such as Binary Tree, Binary Indexed Tree (Fenwick Tree), Expression Tree, Heap,
