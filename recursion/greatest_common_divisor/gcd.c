@@ -6,7 +6,5 @@ int gcd(int a, int b)
 {
     if(b>a)
         swap(&a, &b);
-    if(a%b == 0)
-        return b;
-    gcd(b, a%b);
+    return b == 0 ? a : gcd(b, a%b);
 }
