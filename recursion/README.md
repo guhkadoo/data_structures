@@ -15,15 +15,24 @@
 
 3. **Fibonacci Sequence**
    - Computes Fibonacci numbers where `F(n) = F(n-1) + F(n-2)`.
-   - **Time Complexity:** O(2^N) (can be optimized using memoization).
+   - **Time Complexity:** O(2<sup>N</sup>) (can be optimized using memoization).
    - **Cons:** Exponential time complexity without optimization.
 
-4. **Peak Finding Algorithm**
+4. **Greatest Common Divisor**
+   - Computes the gcd between two numbers.
+   - **Time Complexity:** Optimized Division Based Euclidean takes O(log(min(a,b)))
+
+5. **Laplace Determinant**
+   - Computes the determinant of a matrix through Laplace expansion.
+   - **Time Complexity:** O(n!). This makes the Laplace expansion an inefficient method compared to LU decomposition or
+   Gaussian elimination which have a time complexity of O(n<sup>3</sup>).
+
+6. **Peak Finding Algorithm**
    - Finds a peak element in an array where `arr[i]` is greater than or equal to its neighbors.
    - **Time Complexity:** O(log N).
    - **Pros:** Efficient for large datasets.
 
-5. **Recursive Chain**
+6. **Recursive Chain**
    - A recursive function need not to call itself directly. Rather, it may call itself indirectly. As in the following example:
    ```c
    a(formal parameters)
